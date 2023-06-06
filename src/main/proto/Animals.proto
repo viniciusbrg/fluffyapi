@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package com.example.fluffyapi;
+
+option java_multiple_files = true;
+option java_package = "com.example.fluffyapi";
+option java_outer_classname = "AnimalsProtos";
+
+
+message AnimalDTO {
+  string name = 1;
+  string about = 2;
+  string imageUrl = 3;
+  int64 id = 4;
+}
+
+message AnimalList {
+  repeated AnimalDTO animals = 1;
+}
